@@ -1,0 +1,83 @@
+# The configuration of handling the schematic
+# Under development and still not working
+---
+# Enable this features
+# If false, the plugin will use build-in generation
+enable: true
+# Versioning, DO NOT CHANGE
+version: 1
+# Schematic list
+# Here is the hints for you (Case sensitive):
+#  - FILE_NAME*         (String):     The name of the folder (including .schematic)
+#  - BLOCK_SPAWN        (String):     he type of block that will be needed to spawn player
+#                                     Must be one. Eg. '115:3' - Indicating to black wool
+#  - PERMISSION         (String):     The permission that will be needed for player to attempt to
+#                                     use this schematic.
+#  - DESCRIPTION*       (String):     You know what is this mean for right?
+#  - RATING             (double):     This might be unimplemented yet but this usage are to count
+#                                     Player rating on challenges.
+#  - USE_CONFIG_CHEST   (boolean):    Use the default chest in config.yml
+#  - PASTE_ENTITIES     (boolean):    Still under development. But work on minecarts
+#  - BIOME              (String):     The Biome of the island. Eg: 'Plains'
+#  - DEFAULT_PRIORITY** (boolean):    Set the template to be default template
+#  - LEVEL_HANDICAP     (Integer):    Level handicap zeros the initial island level.
+#  - Note: ' * ' means required
+#          ' ** ' means required to be used once
+# You can leave other variables to indicate that you don't want them
+schematicList:
+  # Schematic list
+  schematic:
+    # This is a key for your island. This key is not be used in this plugin
+    # You can make your own private schematic types (Saved in integers)
+    # This is the order of your schematic (1)
+    island:
+      # This is an example of the island name
+      FILE_NAME: "island.schematic"
+      # This island name
+      # You can use & as color codes
+      NAME: "&eThe Original"
+      # This is an example of a description
+      # This will be used in sign and others (Must be not long 25 char, otherwise the sign will be empty)
+      DESCRIPTION: "The default island for starters. Great resource with extreme height."
+      # Permission base
+      PERMISSION: "is.create"
+      # Rating
+      RATING: 1.8
+      # Biome
+      BIOME: "PLAINS"
+      # Default priority
+      DEFAULT_PRIORITY: true
+      USE_CONFIG_CHEST: true
+      # level handicap
+      LEVEL_HANDICAP: 3
+    # This is the order of your schematic (2)
+    featured:
+      FILE_NAME: "featured.schematic"
+      NAME: "&eFeatured &cOne"
+      DESCRIPTION: "&Wow, Featured..."
+      PERMISSION: "is.create"
+      RATING: 5
+      BIOME: "FOREST"
+      LEVEL_HANDICAP: 13
+    # Double island (3)
+    double:
+      FILE_NAME: "double.schematic"
+      NAME: "&eIsland &dDuo"
+      DESCRIPTION: "Pretty much for double islands. Two close islands. Double more fun. But a little easier. Credit: Antal1609"
+      PERMISSION: "is.create"
+      RATING: 9
+      BIOME: "FOREST"
+      DEFAULT_PRIORITY: false
+      USE_CONFIG_CHEST: true
+      LEVEL_HANDICAP: 3
+    # Harder schematic (4)
+    extrahard:
+      FILE_NAME: "harder.schematic"
+      NAME: "&lBlack &bDiamonds"
+      DESCRIPTION: "&cExperts only! &aMinimal resources. &aWith a few diamonds."
+      PERMISSION: "is.create"
+      RATING: 1
+      BIOME: "FOREST"
+      DEFAULT_PRIORITY: false
+      USE_CONFIG_CHEST: true
+      LEVEL_HANDICAP: 1

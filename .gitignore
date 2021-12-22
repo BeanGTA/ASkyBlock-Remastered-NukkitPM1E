@@ -1,0 +1,15 @@
+/target/
+
+# Intellij Platforms
+*.iml
+.idea
+.idea/*
+
+# Eclipse Platforms
+.classpath
+.project
+.settings
+.settings/*
+
+# Others
+*.txt

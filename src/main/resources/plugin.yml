@@ -1,0 +1,143 @@
+name: "ASkyBlock"
+version: "0.5.2-BETA"
+author: "larryTheCoder"
+api: ["1.0.0"]
+main: com.larryTheCoder.ASkyBlock
+depend: 
+  - DbLib
+softdepend:
+  - EconomyAPI
+permissions:
+    # Island create perm
+    is.create:
+     default: true
+     description: "Create an island"
+    is.home.1:
+     default: true
+     description: "Allow the player to create an island with home 1"
+    # On /is command perm
+    is.command:
+     default: true
+     description: "SkyBlock main command"
+    is.gamemode.bypass:
+     default: op
+     description: "Enables gamemode bypass to teleport into the SkyBlock world."
+    # Island team chatting command
+    is.command.teamChat:
+     default: true
+     description: "Enable chatting with team"
+    # Island messages command
+    is.command.message:
+     default: true
+     description: "Read the offline messages"
+    # Kick player from owner's island
+    is.command.expel:
+     default: true
+     description: "Kick a player from your island"  
+    # Island leave permission
+    is.command.leave:
+     default: true
+     description: "leave island"
+    # Message language (this is what I am waiting for!)
+    is.command.lang:
+     default: true
+     description: "Set your default language"
+    # Island spawn
+    is.command.setspawn:
+     default: op
+     description: "Set the island main spawn."
+    # Reset island command? or Delete island command...
+    is.command.reset:
+     default: true
+     description: "Reset player island"
+    # Island home permission
+    is.command.home:
+     default: true
+     description: "Teleport back to home"
+    # Get island info
+    is.command.info:
+     default: true
+     description: "get the players island info"
+    # Teleport or warp? Hmmm...
+    is.command.teleport:
+     default: true
+     description: "Teleport to other island!"   
+    # Has an invitation? Of course!
+    is.command.accept:
+     default: true
+     description: "accept an invitation"   
+    # Sorry I didn't like to join you
+    is.command.reject:
+     default: true
+     description: "Reject an invitation"  
+    # Edit island. eg biome, name
+    is.command.edit:
+     default: true
+     description: "Edit your island information"
+    # Invite me please!
+    is.command.invite:
+     default: true
+     description: "Invite a player"
+    # I did like this world please
+    is.command.setworld:
+     default: true
+     description: "Set the player default world (Where island were generated)"
+    # This is the setting panel
+    is.panel.setting:
+     default: true
+     description: "A Setting panel for your island"
+    is.panel.protection:
+     default: true
+     description: "Set your island protection settings"
+    # These are bypass perm
+    is.mod.bypassprotect:
+     default: op
+     description: "Bypass the island Guard settings"
+    is.mod.bypasslock:
+     default: op
+     description: "Bypass the island Lock settings"
+    is.craft.enderchest:
+     default: op
+     description: "Bypass the enderchest usage"
+    is.bypass.wait:
+     default: op
+     description: "Bypass the reset timer"
+    # Admin on /isa command
+    is.admin.command:
+     default: op
+     description: "Admin main command"
+    # Admin Island Command
+    is.admin.generate:
+     default: op
+     description: "Generate a new island world"
+    # Admin kick command
+    is.admin.kick:
+     default: op
+     description: "Kick a player from island world"
+    is.admin.rename:
+     default: op
+     description: "Rename other players island"
+    is.admin.setspawn:
+     default: op
+     description: "Set the world island location"
+    is.admin.delete:
+     default: op
+     description: "Delete an island"
+    is.admin.clear:
+     default: op
+     description: "Flushes all he memory in the plugin"
+    is.admin.cobblestats:
+     default: op
+     description: "Get all the cobblestone generator stats"
+    is.admin.completechallenge:
+     default: op
+     description: "Complete the challenge for a player."
+    is.admin.resetchallenge:
+     default: op
+     description: "Reset the challenge for a player."
+    is.admin.challanges:
+     default: op
+     description: "Check information on the given player."
+    is.topten:
+     default: true
+     description: "Be able to get into topten leaderboard."
