@@ -1,4 +1,4 @@
-# ASkyBlock-Remastered-NukkitPM1E
+# ASkyBlock-Remastered-NukkitPM1
 ASkyBlock Remastered For NukkitPM1
 
 Plugins Origin: https://github.com/larryTheCoder/ASkyBlock
